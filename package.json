@@ -1,5 +1,5 @@
 {
-  "name": "ang2-quick",
+  "name": "angular2-polymer-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -28,5 +28,5 @@
     "typings":"^0.7.5"
   },
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }

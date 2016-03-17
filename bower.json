@@ -1,11 +1,11 @@
 {
-  "name": "ang2-quick",
+  "name": "angular2-polymer-demo",
   "description": "",
   "main": "index.js",
   "authors": [
     "Osama Sidat <oosidat@gmail.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "moduleType": [],
   "homepage": "",
   "private": true,

@@ -1,19 +1,15 @@
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import {Component} from 'angular2/core';
-import {HeroService} from '../services/hero.service';
+import {HeroService} from '../../services/hero.service';
 
-import {HeroesComponent} from './heroes.component';
-import {DashboardComponent} from './dashboard/dashboard.component';
-import {HeroDetailComponent} from './hero-detail.component';
+import {HeroesComponent} from '../heroes/heroes.component';
+import {DashboardComponent} from '../dashboard/dashboard.component';
+import {HeroDetailComponent} from '../hero-detail/hero-detail.component';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <h1>{{title}}</h1>
-    <a [routerLink]="['Dashboard']">Dashboard</a>
-    <a [routerLink]="['Heroes']">Heroes</a>
-    <router-outlet></router-outlet>
-  `,
+  templateUrl: 'app/components/app/app.component.html',
+  styleUrls: ['app/components/app/app.component.css'],
   directives: [ROUTER_DIRECTIVES],
   providers: [ROUTER_PROVIDERS, HeroService]
 })

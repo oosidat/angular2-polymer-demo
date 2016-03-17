@@ -1,9 +1,11 @@
 <div *ngIf="hero">
-  <h2>{{hero.name}} details!</h2>
-  <div><label>id: </label>{{hero.id}}</div>
-  <div>
-  <label>name: </label>
-  <input [(ngModel)]="hero.name" placeholder="name">
-  </div>
-  <button (click)="goBack()">Back</button>
+  <paper-card heading="{{hero.name}} details!">
+    <div class="card-content">
+      <div><label>id: </label>{{hero.id}}</div>
+      <paper-input label="Name" [(ngModel)]="hero.name" ngDefaultControl></paper-input>
+    </div>
+    <div class="card-actions">
+      <paper-button raised (click)="goBack()">Back</paper-button>
+    </div>
+  </paper-card>
 </div>

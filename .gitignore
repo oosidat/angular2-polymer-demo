@@ -1,4 +1,5 @@
 node_modules
+bower_components
 typings
 app/**/*.js
 app/**/*.js.map

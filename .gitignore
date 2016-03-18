@@ -1,5 +1,6 @@
 node_modules
 bower_components
 typings
+dist
 app/**/*.js
 app/**/*.js.map

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\"",
+    "build": "gulp",
+    "start": "npm run lite",
+    "watch": "concurrently \"gulp watch\" \"npm run lite\"",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "typings": "typings",
@@ -23,9 +25,14 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.12.1",
+    "gulp-vulcanize": "^6.1.0",
     "lite-server": "^2.1.0",
     "typescript": "^1.8.7",
-    "typings":"^0.7.5"
+    "typings": "^0.7.5"
   },
   "author": "",
   "license": "MIT"

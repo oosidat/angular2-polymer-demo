@@ -1,7 +1,17 @@
-# Angular 2 and Polymer Demo/Template
+# Angular 2 and Polymer Demo/Template with Gulp
 
-Slight modifcation of [Angular 2 Demo](https://angular.io/docs/ts/latest/tutorial/), extended to use Polymer paper elements (card, button, input)
+* Basic [Angular 2 Tutorial / Demo](https://angular.io/docs/ts/latest/tutorial/), extended
+* Different directory structure (components, services, models in their own folders)
+* Uses Polymer paper elements (card, button, input)
+* Uses Polymer Vulcanize (via `gulp-vulcanize`)
 
 ## Usage
 
-Clone, `npm install`, `bower install`, `npm start`, the usual. Will be up on `localhost:3000`.
+* Fork and/or Clone repository
+* `npm install` - install `package.json` dependencies
+* `bower install` - install `bower.json` dependencies
+* Build:
+  * `npm run build` - will produce a `dist` directory for the app
+  * `npm run start` - starts `lite-server` on `localhost:3000`
+* Watch:
+  * `npm run watch` - concurrently starts `lite-server` and builds and watches files for changes via `gulp watch`

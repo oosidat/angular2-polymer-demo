@@ -2,10 +2,12 @@
   <paper-card heading="{{hero.name}} details!">
     <div class="card-content">
       <div><label>id: </label>{{hero.id}}</div>
-      <paper-input label="Name" [(ngModel)]="hero.name" ngDefaultControl></paper-input>
+      <paper-input label="(Polymer) Name" [(ngModel)]="hero.name" ngDefaultControl></paper-input>
+      <label class="small">(Angular) Name:</label>
+      <input [(ngModel)]="hero.name" placeholder="Name">
     </div>
     <div class="card-actions">
-      <paper-button raised (click)="goBack()">Back</paper-button>
+      <paper-fab mini icon="arrow-back" title="back" (click)="goBack()"></paper-fab>
     </div>
   </paper-card>
 </div>

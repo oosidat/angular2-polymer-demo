@@ -11,7 +11,7 @@ gulp.task('compile', () => {
   const tsResult = tsProject
     .src()
     .pipe(typescript(tsProject));
-  tsResult.js.pipe(gulp.dest('dist/'));
+  tsResult.js.pipe(gulp.dest('dist/app'));
 });
 
 gulp.task('copy:libs', () =>

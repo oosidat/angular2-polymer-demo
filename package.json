@@ -11,7 +11,7 @@
     "tsc:w": "tsc -w",
     "typings": "typings",
     "lite": "lite-server",
-    "postinstall": "typings install",
+    "postinstall": "typings install && bower install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

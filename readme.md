@@ -8,10 +8,9 @@
 ## Usage
 
 * Fork and/or Clone repository
-* `npm install` - install `package.json` dependencies
-* `bower install` - install `bower.json` dependencies
+* `npm install` - install `package.json` dependencies (and `bower.json` dependencies)
 * Build:
   * `npm run build` - will produce a `dist` directory for the app
-  * `npm run start` - starts `lite-server` on `localhost:3000`
+  * `npm run start` - starts `lite-server` on `localhost:3000` - Do a `build` before starting the first time
 * Watch:
   * `npm run watch` - concurrently starts `lite-server` and builds and watches files for changes via `gulp watch`

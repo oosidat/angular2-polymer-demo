@@ -25,8 +25,17 @@ gulp.task('copy:libs', () =>
       'node_modules/rxjs/bundles/Rx.js',
       'node_modules/angular2/bundles/angular2.dev.js',
       'node_modules/angular2/bundles/router.dev.js',
+      'bower_components/**/*'
     ])
     .pipe(gulp.dest('dist/lib'))
+);
+
+gulp.task('copy:bower', () =>
+  gulp
+    .src([
+      'bower_components/**/*'
+    ])
+    .pipe(gulp.dest('dist/bower_components'))
 );
 
 gulp.task('copy:assets', () =>
@@ -42,8 +51,7 @@ gulp.task('vulcanize', () =>
     .pipe(gulp.dest('dist'))
 );
 
-
-gulp.task('build', ['compile', 'copy:libs', 'copy:assets', 'vulcanize']);
+gulp.task('build', ['compile', 'copy:libs', 'copy:bower', 'copy:assets', 'vulcanize']);
 
 gulp.task('watch', ['build'], function() {
   gulp.watch(['app/**/*', 'index.html','styles/**/*', '!app/**/*.ts'], ['copy:assets']);
